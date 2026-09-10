@@ -8,6 +8,9 @@
   "peerDependencies": {
     "typescript": "^7"
   },
+  "scripts": {
+    "go": "fly deploy --build-arg GIT_SHA=$(git rev-parse --short HEAD)"
+  },
   "dependencies": {
     "@ai-sdk/deepseek": "^3.0.39",
     "@ai-sdk/moonshotai": "^3.0.45",

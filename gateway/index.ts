@@ -241,6 +241,21 @@ function validateVersion(req: BunRequest<`/:version/${string}`>): 'v2' | 'v3' | 
 Bun.serve({
     port: 8080,
     routes: {
+        '/healthz': async (req) => {
+            auth(req);
+            const sha = process.env.GIT_SHA;
+            if (!sha) {
+                return new Response('Not OK', {
+                    status: 400,
+                })
+            }
+            return new Response('OK', {
+                status: 200,
+                headers: {
+                    'x-sam-ai-router': sha,
+                },
+            });
+        },
         '/decide': async (req) => {
             auth(req);
             method(req, 'POST');
