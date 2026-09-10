@@ -2,6 +2,10 @@
   "name": "@wundero/ai-router",
   "version": "1.0.0",
   "description": "Sam AI router provider for the Vercel AI SDK",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wundero/sam-ai-router"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
