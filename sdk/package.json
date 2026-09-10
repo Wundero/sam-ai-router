@@ -1,6 +1,6 @@
 {
   "name": "@wundero/ai-router",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Sam AI router provider for the Vercel AI SDK",
   "type": "module",
   "main": "./dist/index.js",
@@ -36,7 +36,8 @@
     "node": ">=18"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "license": "MIT",
   "dependencies": {
