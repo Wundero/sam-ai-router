@@ -1,0 +1,24 @@
+{
+  "name": "@wundero/ai-router",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@ai-sdk/deepseek": "^3.0.39",
+    "@ai-sdk/moonshotai": "^3.0.45",
+    "@ai-sdk/openai-compatible": "^3.0.44",
+    "@ai-sdk/provider": "^4.0.10",
+    "@ai-sdk/provider-utils": "^5.0.36",
+    "@ai-sdk/zai": "^3.0.6",
+    "ai": "^7.0.93",
+    "ai-gateway-provider": "^4.0.0",
+    "ioredis": "^6.0.0",
+    "unstorage": "^1.17.5",
+    "zod": "^4.5.4"
+  }
+}

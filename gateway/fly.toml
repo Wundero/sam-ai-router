@@ -1,0 +1,21 @@
+# fly.toml app configuration file generated for sam-ai-gateway on 2026-09-07T12:06:10-07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'sam-ai-gateway'
+primary_region = 'sjc'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  min_machines_running = 1
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '512mb'
+  cpus = 1
+  memory_mb = 512
